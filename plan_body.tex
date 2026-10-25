@@ -1,0 +1,38 @@
+% analysis plan, written 20 October 2026 before any of the new checks were run.
+% this file is input by both analysis_plan.tex (standalone) and paper.tex (appendix).
+
+I wrote this plan on 20 October 2026, before running any of the checks below. One honest caveat first. The nine event estimates in the first version of this project (synthetic DiD on git pushes, 106 donors) were already public when I wrote it, so they are not pre-registered in the strict sense. What the plan fixes in advance is everything new: which tests are confirmatory, how I correct for running many of them, what counts as a failed falsification check, and what wording the README is allowed to use. If a later run breaks a rule here, the write up says so instead of quietly changing the rule.
+
+\paragraph{Question.} When a government cuts off a country's internet, how much does the GitHub activity that GitHub attributes to that country fall, compared with what similar economies predict? And how much of any fall is measurement (activity that keeps happening but gets placed in another country) rather than less work? The outcome is not national output or productivity. GitHub places a developer in the country their IP address shows on most days of the quarter, so everything here is about geographically attributed GitHub activity.
+
+\paragraph{Fixed design.}
+\begin{itemize}
+\item Primary outcome: log git pushes per quarter. Secondary: log developers, log repositories, log organizations. These three are end of quarter counts that include inactive accounts, so they mostly measure where accounts are placed and how many new ones appear. I expect them to move much less than pushes and will not call a small move a contradiction.
+\item Primary estimator: synthetic difference in differences with the same windows and donor rule as version 1 (no listed shutdown, at least 10,000 pushes in every quarter). Secondary: demeaned synthetic control and ridge augmented synthetic control.
+\item Events: the nine in \texttt{data/events.csv}, unchanged. Events found later in outside data (Access Now, OONI) are reported separately and never join the confirmatory family.
+\item Exposure (how much of the quarter was offline) comes from OONI daily measurement counts, which have nothing to do with GitHub. Baseline is the median daily count over the 91 days before the event's first quarter. A day is disrupted when its count is below half the baseline. Exposure is the share of disrupted days in the quarter. Only countries with a baseline of at least 100 measurements a day are used. Sensitivity thresholds are 25\% and 75\%.
+\end{itemize}
+
+\paragraph{Confirmatory tests.}
+\begin{description}
+\item[C1.] For each of the nine events, the null is no change in attributed pushes in the headline quarters. The p value is two sided from the placebo standard error (the larger of the in-space and in-time placebo spreads), which the simulations show is calibrated or conservative. Holm correction across the nine at a 5\% family error rate. The exact in-space permutation p value and the conformal p value of Chernozhukov, W\"uthrich and Zhu (2021) are reported but decide nothing.
+\item[C2.] Pooled effect: the precision weighted average over the six full shutdowns, with uncertainty from redrawing each event's estimation error from its own placebo distribution. Null is zero.
+\item[C3.] Dose response: across events where OONI exposure is measurable, the slope of the log effect on $\log(1-\text{exposure})$ is positive (one sided). Whether the slope is exactly 1 (``a day offline costs a day'') is exploratory, and I only say something about it if the 95\% interval for the slope is narrower than 0.5.
+\end{description}
+
+\paragraph{Falsification checks, pass or fail fixed in advance.}
+\begin{description}
+\item[F1.] Negative controls: economies with a big crisis, protest wave or new sanctions in a quarter but no full network shutdown in the Access Now data for that quarter, each with a cited public source. Passes if the number of controls with $p<0.05$ is no more than a Binomial$(n, 0.05)$ gives 95\% of the time.
+\item[F2.] Backdating: refit each event with its last two pre quarters held out. Passes if the held out gaps sit inside the 95\% placebo band.
+\item[F3.] Donor pools: (a) donors with no full network shutdown of any kind in the Access Now data for 2020 to 2025, (b) donors on the same continent, (c) donors in the same World Bank income group in 2020, (d) all donors except land neighbors, (e) leave one donor out for every donor with weight above 1\%. Passes if the sign never flips and the estimate never moves by more than one standard error.
+\item[F4.] VPN reassignment: if people in a blacked out country keep pushing through VPNs, GitHub should place that activity in the exit country. I fixed the list of likely exit economies before looking at any 2026 numbers. They are the big hosting markets: United States, Germany, Netherlands, United Kingdom, France, Finland, Sweden, Canada, Singapore, Turkey and the UAE. For each big shutdown quarter I estimate each one's gap against its own twin and add up the excess pushes. The check is whether that excess is bigger than chance, and I report how big a reassignment the test could have detected.
+\end{description}
+
+\paragraph{Exploratory.} Heterogeneity (duration, full vs partial, baseline activity), but only after a simulation gives the minimum detectable difference. If it is larger than any plausible difference, I report that the data can't answer the question and stop. Also exploratory: the three secondary outcomes, augmented synthetic control, the stacked event study, sensitivity to parallel trends violations in the spirit of Rambachan and Roth (2023), the 2026 global jump and sanctioned economies, Wikimedia pageviews as a second daily check on timing, and newer GitHub data if it exists.
+
+\paragraph{Wording rules.}
+\begin{itemize}
+\item An event is called a clear drop only if C1 rejects after Holm, it passes F2 and F3, synthetic control and augmented synthetic control agree in sign and significance, and the breakdown value of the parallel trends sensitivity is above 1 (the violation needed to erase it is bigger than the worst pre period miss).
+\item Effects are always written as changes in GitHub activity attributed to the country, relative to a synthetic counterfactual. No ``days of work lost'' unless C3 and the interval rule allow it, and even then with the measurement caveat.
+\item Anything that fails a check stays in the write up with the failure next to it.
+\end{itemize}
