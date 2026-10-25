@@ -99,9 +99,56 @@ def sdid(y1, Y0, pre, post):
                float(np.sqrt(np.mean((gaps[pre] - lam @ gaps[pre]) ** 2))))
 
 
+def ridge_lambda(X, y, grid=None):
+    """Pick the ridge penalty by leave one out error across donors (closed form)."""
+    s = np.linalg.svd(X, compute_uv=False)
+    grid = grid if grid is not None else (s[0] ** 2) * np.logspace(-4, 1, 30)
+    best, best_err = grid[0], np.inf
+    for lam_ in grid:
+        H = X @ np.linalg.solve(X.T @ X + lam_ * np.eye(X.shape[1]), X.T)
+        r = (y - H @ y) / np.clip(1 - np.diag(H), 1e-8, None)
+        err = np.mean(r ** 2)
+        if err < best_err:
+            best, best_err = lam_, err
+    return best
+
+
+def ascm(y1, Y0, pre, post, lam_=None):
+    """Ridge augmented synthetic control (Ben-Michael, Feller and Rothstein 2021), with
+    unit fixed effects. Start from the demeaned synthetic control, then fix whatever pre
+    period imbalance is left with a ridge regression of donors' later outcomes on their
+    pre period. If the twin fits perfectly the correction is zero."""
+    y1 = np.asarray(y1, float)
+    Y0 = np.asarray(Y0, float)
+    sc = synth_control(y1, Y0, pre, post)
+    omega = sc.omega
+    c1 = y1 - y1[pre].mean()
+    C0 = Y0 - Y0[:, pre].mean(axis=1, keepdims=True)
+    X = C0[:, pre]
+    Xc = X - X.mean(axis=0)
+    imbalance = c1[pre] - omega @ X
+    gaps = c1 - omega @ C0
+    # one penalty, picked on the post period average, then used for every later quarter
+    ypost = C0[:, post].mean(axis=1)
+    lam_ = lam_ if lam_ is not None else ridge_lambda(Xc, ypost - ypost.mean())
+    M = np.linalg.solve(Xc.T @ Xc + lam_ * np.eye(Xc.shape[1]), Xc.T)
+    for t in range(len(y1)):
+        if t in pre:
+            continue
+        eta = M @ (C0[:, t] - C0[:, t].mean())
+        gaps[t] -= imbalance @ eta
+    twin = y1 - gaps
+    lam = np.full(len(pre), 1.0 / len(pre))
+    f = Fit("ascm", gaps, twin, omega, lam, list(pre), list(post),
+            float(np.sqrt(np.mean(gaps[pre] ** 2))))
+    return f
+
+
 def fit(method, y1, Y0, pre, post):
     if method == "sc":
         return synth_control(y1, Y0, pre, post)
     if method == "sdid":
         return sdid(y1, Y0, pre, post)
+    if method == "ascm":
+        return ascm(y1, Y0, pre, post)
     raise ValueError(method)

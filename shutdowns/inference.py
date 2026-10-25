@@ -9,7 +9,7 @@ be too optimistic for them. The standard error used is the larger of the two.
 """
 from dataclasses import dataclass
 import numpy as np
-from .synth import fit
+from .synth import fit, simplex_weights
 
 
 @dataclass
@@ -23,6 +23,8 @@ class Result:
     n_placebos: int
     fit: object
     path_se: np.ndarray      # placebo standard error at each quarter (space)
+    space: np.ndarray = None   # every in-space placebo effect
+    time: np.ndarray = None    # every in-time placebo effect
 
     @property
     def pct(self):
@@ -55,6 +57,45 @@ def time_placebos(method, y1, Y0, pre, n_post, min_pre=5):
     return np.array(out)
 
 
+def conformal(y1, Y0, pre, post, grid=None, alpha=0.05):
+    """Conformal inference for synthetic control (Chernozhukov, Wuthrich and Zhu 2021).
+
+    For a candidate effect theta, take theta out of the post quarters, fit the twin on
+    pre and post together (that's the null being imposed), and ask whether the post
+    residuals look unusually big next to every cyclic shift of the residuals in time.
+    The p value is exact if the residuals are stationary, and the interval is every
+    theta that isn't rejected. With n quarters in the fit the smallest possible p is 1/n."""
+    y1 = np.asarray(y1, float)
+    Y0 = np.asarray(Y0, float)
+    used = sorted(set(pre) | set(post))
+    pos = [used.index(t) for t in post]
+    n = len(used)
+    # with ~100 donors and ~20 quarters a plain synthetic control can fit the post
+    # quarters too once the null is imposed, which makes every residual tiny. the same
+    # ridge penalty synthetic DiD uses keeps it honest.
+    sigma = np.std(np.diff(Y0[:, pre], axis=1), ddof=1)
+    eta = n * ((len(post)) ** 0.25 * sigma) ** 2
+
+    def pval(theta):
+        y = y1.copy()
+        y[list(post)] -= theta
+        w = simplex_weights(Y0[:, used].T, y[used], eta=eta, intercept=True)
+        u = y[used] - w @ Y0[:, used]
+        u = u - u.mean()
+        s = np.array([np.mean(np.abs(np.roll(u, j)[pos])) for j in range(n)])
+        return float(np.mean(s >= s[0] - 1e-12))
+
+    grid = np.linspace(-2.5, 1.0, 351) if grid is None else np.asarray(grid)
+    ps = np.array([pval(th) for th in grid])
+    keep = grid[ps > alpha]
+    lo, hi = (float(keep.min()), float(keep.max())) if len(keep) else (np.nan, np.nan)
+    return {"p": pval(0.0), "lo": lo, "hi": hi, "min_p": 1 / n, "n_periods": n,
+            "lo_pct": float(np.expm1(lo)), "hi_pct": float(np.expm1(hi)),
+            # interval hits the edge of the grid, so it's really open on that side
+            "open_low": bool(len(keep) and keep.min() <= grid.min()),
+            "open_high": bool(len(keep) and keep.max() >= grid.max())}
+
+
 def estimate(method, y1, Y0, pre, post, path=(), min_pre=5):
     quarters = list(post) + list(path)
     f = fit(method, y1, Y0, pre, post)
@@ -68,4 +109,4 @@ def estimate(method, y1, Y0, pre, post, path=(), min_pre=5):
     path_se[quarters] = np.sqrt(np.mean(pg[:, quarters] ** 2, axis=0))
     # the treated country's own noise also applies along the path
     path_se[quarters] = np.maximum(path_se[quarters], se_time)
-    return Result(method, f.effect, se, se_space, se_time, float(p), len(pe), f, path_se)
+    return Result(method, f.effect, se, se_space, se_time, float(p), len(pe), f, path_se, pe, te)

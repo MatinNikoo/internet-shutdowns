@@ -1,0 +1,21 @@
+{
+ "sims": 200,
+ "settings": {
+  "myanmar_like": {
+   "pre_quarters": 4,
+   "post_quarters": 2,
+   "false_alarm_normal": 0.04,
+   "false_alarm_permutation": 0.02,
+   "false_alarm_normal_small_donors": 0.04597701149425287,
+   "share_without_time_placebos": 1.0
+  },
+  "sudan_like": {
+   "pre_quarters": 7,
+   "post_quarters": 1,
+   "false_alarm_normal": 0.045,
+   "false_alarm_permutation": 0.035,
+   "false_alarm_normal_small_donors": 0.07920792079207921,
+   "share_without_time_placebos": 1.0
+  }
+ }
+}

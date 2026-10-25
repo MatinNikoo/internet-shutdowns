@@ -1,0 +1,833 @@
+{
+ "rule": "nationwide, full network, fixed and mobile, >= 5 days, panel economy, from 2021",
+ "registry_found": [
+  {
+   "iso2": "BD",
+   "quarter": "2024Q3",
+   "registry_event": "BD-2024",
+   "days": 14
+  },
+  {
+   "iso2": "IR",
+   "quarter": "2025Q2",
+   "registry_event": "IR-2025",
+   "days": 8
+  },
+  {
+   "iso2": "KZ",
+   "quarter": "2022Q1",
+   "registry_event": "KZ-2022",
+   "days": 8
+  },
+  {
+   "iso2": "MM",
+   "quarter": "2021Q1",
+   "registry_event": "MM-2021",
+   "days": 46
+  },
+  {
+   "iso2": "MM",
+   "quarter": "2021Q2",
+   "registry_event": "MM-2021",
+   "days": 27
+  },
+  {
+   "iso2": "SD",
+   "quarter": "2021Q4",
+   "registry_event": "SD-2021",
+   "days": 30
+  },
+  {
+   "iso2": "TZ",
+   "quarter": "2025Q4",
+   "registry_event": "TZ-2025",
+   "days": 6
+  }
+ ],
+ "registry_expected": [
+  "KZ-2022",
+  "SD-2021",
+  "BD-2024",
+  "TZ-2025",
+  "IR-2025"
+ ],
+ "registry_missed": [],
+ "new": [
+  {
+   "iso2": "CU",
+   "quarter": "2021Q3",
+   "days": 5,
+   "exam": false,
+   "cause": "Protests",
+   "source": "https://www.accessnow.org/patria-y-vida-cuba/",
+   "keepiton_start": "2021-07-11",
+   "pre_quarters": 6,
+   "sdid_pct": 0.13602329264365062,
+   "se": 0.15386896181406326,
+   "p_normal": 0.40719100084378734,
+   "share_of_quarter": 0.05434782608695652,
+   "predicted_pct_beta_fit": -0.07058481751200198,
+   "predicted_pct_day_for_day": -0.05434782608695652,
+   "z_vs_prediction": 1.3045746749665788,
+   "ooni": {
+    "usable": false,
+    "reason": "baseline 49 a day is under 100",
+    "baseline": 49.0
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "DZ",
+   "quarter": "2021Q2",
+   "days": 5,
+   "exam": true,
+   "cause": "Exam cheating",
+   "source": "https://twitter.com/alisibai/status/1407017281922682901",
+   "keepiton_start": "2021-06-20",
+   "pre_quarters": 5,
+   "sdid_pct": -0.06948692119495808,
+   "se": 0.11724991461028679,
+   "p_normal": 0.5390592252698414,
+   "share_of_quarter": 0.054945054945054944,
+   "predicted_pct_beta_fit": -0.07135364005464277,
+   "predicted_pct_day_for_day": -0.054945054945054944,
+   "z_vs_prediction": 0.01712694432334391,
+   "ooni": {
+    "usable": true,
+    "baseline": 232.0,
+    "days": 91,
+    "disrupted_days": 0,
+    "share": 0.0,
+    "mean_depth": 0.10164835164835165,
+    "threshold": 0.5,
+    "first_disrupted": null,
+    "last_disrupted": null
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "DZ",
+   "quarter": "2024Q2",
+   "days": 5,
+   "exam": true,
+   "cause": "Exam cheating",
+   "source": "https://x.com/CloudflareRadar/status/1799838521815162896",
+   "keepiton_start": "2024-06-09",
+   "pre_quarters": 16,
+   "sdid_pct": -0.021588905154761976,
+   "se": 0.10770614541129632,
+   "p_normal": 0.8394180082296729,
+   "share_of_quarter": 0.054945054945054944,
+   "predicted_pct_beta_fit": -0.07135364005464277,
+   "predicted_pct_day_for_day": -0.054945054945054944,
+   "z_vs_prediction": 0.48466988578430703,
+   "ooni": {
+    "usable": true,
+    "baseline": 3291.0,
+    "days": 91,
+    "disrupted_days": 15,
+    "share": 0.16483516483516483,
+    "mean_depth": 0.20839719381196134,
+    "threshold": 0.5,
+    "first_disrupted": "2024-04-09",
+    "last_disrupted": "2024-06-29"
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "IQ",
+   "quarter": "2023Q2",
+   "days": 30,
+   "exam": true,
+   "cause": "Exam cheating",
+   "source": "https://twitter.com/CloudflareRadar/status/1669319814869860352",
+   "keepiton_start": "2023-06-01",
+   "pre_quarters": 13,
+   "sdid_pct": -0.08968459409470579,
+   "se": 0.26830700927890383,
+   "p_normal": 0.7261801462177084,
+   "share_of_quarter": 0.32967032967032966,
+   "predicted_pct_beta_fit": -0.4078260747851876,
+   "predicted_pct_day_for_day": -0.32967032967032966,
+   "z_vs_prediction": 1.6026072378153209,
+   "ooni": {
+    "usable": true,
+    "baseline": 7385.0,
+    "days": 91,
+    "disrupted_days": 12,
+    "share": 0.13186813186813187,
+    "mean_depth": 0.20608004047408243,
+    "threshold": 0.5,
+    "first_disrupted": "2023-04-12",
+    "last_disrupted": "2023-06-21"
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "IQ",
+   "quarter": "2023Q3",
+   "days": 40,
+   "exam": true,
+   "cause": "Exam cheating",
+   "source": "https://twitter.com/CloudflareRadar/status/1669319814869860352",
+   "keepiton_start": "2023-06-01",
+   "pre_quarters": 13,
+   "sdid_pct": -0.21785706541561897,
+   "se": 0.26830700927890383,
+   "p_normal": 0.3597674723135891,
+   "share_of_quarter": 0.43478260869565216,
+   "predicted_pct_beta_fit": -0.5263924503064138,
+   "predicted_pct_day_for_day": -0.43478260869565216,
+   "z_vs_prediction": 1.8697181317435623,
+   "ooni": {
+    "usable": true,
+    "baseline": 6515.0,
+    "days": 92,
+    "disrupted_days": 1,
+    "share": 0.010869565217391304,
+    "mean_depth": 0.08008608895859054,
+    "threshold": 0.5,
+    "first_disrupted": "2023-07-04",
+    "last_disrupted": "2023-07-04"
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "IQ",
+   "quarter": "2024Q2",
+   "days": 32,
+   "exam": true,
+   "cause": "Exam cheating",
+   "source": "https://x.com/CloudflareRadar/status/1794310601340342494",
+   "keepiton_start": "2024-05-21",
+   "pre_quarters": 15,
+   "sdid_pct": -0.08485889596034518,
+   "se": 0.26784287992159783,
+   "p_normal": 0.7405852064144771,
+   "share_of_quarter": 0.3516483516483517,
+   "predicted_pct_beta_fit": -0.4331289428337706,
+   "predicted_pct_day_for_day": -0.3516483516483517,
+   "z_vs_prediction": 1.7881617765275841,
+   "ooni": {
+    "usable": true,
+    "baseline": 6678.0,
+    "days": 91,
+    "disrupted_days": 13,
+    "share": 0.14285714285714285,
+    "mean_depth": 0.2491533623609095,
+    "threshold": 0.5,
+    "first_disrupted": "2024-04-18",
+    "last_disrupted": "2024-06-29"
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "IQ",
+   "quarter": "2024Q3",
+   "days": 22,
+   "exam": true,
+   "cause": "Exam cheating",
+   "source": "https://radar.cloudflare.com/iq?dateStart=2024-06-22&dateEnd=2024-07-04",
+   "keepiton_start": "2024-06-23",
+   "pre_quarters": 15,
+   "sdid_pct": -0.09390800915515919,
+   "se": 0.26784287992159783,
+   "p_normal": 0.7127388791006604,
+   "share_of_quarter": 0.2391304347826087,
+   "predicted_pct_beta_fit": -0.30092433935742285,
+   "predicted_pct_day_for_day": -0.2391304347826087,
+   "z_vs_prediction": 0.9684105042277609,
+   "ooni": {
+    "usable": true,
+    "baseline": 5163.0,
+    "days": 92,
+    "disrupted_days": 9,
+    "share": 0.09782608695652174,
+    "mean_depth": 0.1979469300794112,
+    "threshold": 0.5,
+    "first_disrupted": "2024-07-01",
+    "last_disrupted": "2024-08-23"
+   },
+   "wikimedia": {
+    "usable": true,
+    "baseline": 46295.0,
+    "days": 92,
+    "disrupted_days": 8,
+    "share": 0.08695652173913043,
+    "mean_depth": 0.2817787158910015,
+    "threshold": 0.5,
+    "first_disrupted": "2024-08-30",
+    "last_disrupted": "2024-09-21"
+   }
+  },
+  {
+   "iso2": "IQ",
+   "quarter": "2025Q2",
+   "days": 31,
+   "exam": true,
+   "cause": "Exam cheating",
+   "source": "https://bsky.app/profile/ioda.live/post/3lpmblw4m5c2g",
+   "keepiton_start": "2025-05-20",
+   "pre_quarters": 17,
+   "sdid_pct": 0.2886790801350709,
+   "se": 0.25054500583720607,
+   "p_normal": 0.31141177586347535,
+   "share_of_quarter": 0.34065934065934067,
+   "predicted_pct_beta_fit": -0.4205101859551675,
+   "predicted_pct_day_for_day": -0.34065934065934067,
+   "z_vs_prediction": 3.18994551778148,
+   "ooni": {
+    "usable": true,
+    "baseline": 3556.0,
+    "days": 91,
+    "disrupted_days": 1,
+    "share": 0.01098901098901099,
+    "mean_depth": 0.04061545878193797,
+    "threshold": 0.5,
+    "first_disrupted": "2025-05-24",
+    "last_disrupted": "2025-05-24"
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "baseline 0 a day is under 1000",
+    "baseline": 0.0
+   }
+  },
+  {
+   "iso2": "IQ",
+   "quarter": "2025Q3",
+   "days": 22,
+   "exam": true,
+   "cause": "Exam cheating",
+   "source": "https://blog.cloudflare.com/q2-2025-internet-disruption-summary/#iraq",
+   "keepiton_start": "2025-06-14",
+   "pre_quarters": 17,
+   "sdid_pct": 0.41617547187284926,
+   "se": 0.25054500583720607,
+   "p_normal": 0.1648899279907814,
+   "share_of_quarter": 0.2391304347826087,
+   "predicted_pct_beta_fit": -0.30092433935742285,
+   "predicted_pct_day_for_day": -0.2391304347826087,
+   "z_vs_prediction": 2.8176822259638263,
+   "ooni": {
+    "usable": true,
+    "baseline": 4797.0,
+    "days": 92,
+    "disrupted_days": 12,
+    "share": 0.13043478260869565,
+    "mean_depth": 0.23437655781240083,
+    "threshold": 0.5,
+    "first_disrupted": "2025-07-05",
+    "last_disrupted": "2025-09-26"
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "baseline 0 a day is under 1000",
+    "baseline": 0.0
+   }
+  },
+  {
+   "iso2": "RU",
+   "quarter": "2024Q4",
+   "days": 8,
+   "exam": false,
+   "cause": "Conflict",
+   "source": "https://ioda.inetintel.cc.gatech.edu/asn/25292?from=1728206119&until=1729070119",
+   "keepiton_start": "2024-10-07",
+   "pre_quarters": 19,
+   "sdid_pct": -0.021126791374994184,
+   "se": 0.07881545961944635,
+   "p_normal": 0.7864479598573864,
+   "share_of_quarter": 0.08695652173913043,
+   "predicted_pct_beta_fit": -0.11234049387022862,
+   "predicted_pct_day_for_day": -0.08695652173913043,
+   "z_vs_prediction": 1.2410495744066963,
+   "ooni": {
+    "usable": true,
+    "baseline": 187257.0,
+    "days": 92,
+    "disrupted_days": 0,
+    "share": 0.0,
+    "mean_depth": 0.1618506279790783,
+    "threshold": 0.5,
+    "first_disrupted": null,
+    "last_disrupted": null
+   },
+   "wikimedia": {
+    "usable": true,
+    "baseline": 2314822.0,
+    "days": 92,
+    "disrupted_days": 92,
+    "share": 1.0,
+    "mean_depth": 1.0,
+    "threshold": 0.5,
+    "first_disrupted": "2024-10-01",
+    "last_disrupted": "2024-12-31"
+   }
+  },
+  {
+   "iso2": "SD",
+   "quarter": "2024Q1",
+   "days": 59,
+   "exam": false,
+   "cause": "Conflict",
+   "source": "https://blog.cloudflare.com/q1-2024-internet-disruption-summary/#militaryaction",
+   "keepiton_start": "2024-02-02",
+   "pre_quarters": 15,
+   "sdid_pct": -0.6150204215659006,
+   "se": 0.7856598245534199,
+   "p_normal": 0.22437177012004317,
+   "share_of_quarter": 0.6483516483516484,
+   "predicted_pct_beta_fit": -0.7456497970622559,
+   "predicted_pct_day_for_day": -0.6483516483516484,
+   "z_vs_prediction": 0.5275543024638013,
+   "ooni": {
+    "usable": false,
+    "reason": "baseline 2 a day is under 100",
+    "baseline": 2.0
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "SD",
+   "quarter": "2024Q2",
+   "days": 55,
+   "exam": false,
+   "cause": "Conflict",
+   "source": "https://blog.cloudflare.com/q1-2024-internet-disruption-summary/#militaryaction",
+   "keepiton_start": "2024-02-02",
+   "pre_quarters": 15,
+   "sdid_pct": -0.6394222466432866,
+   "se": 0.7856598245534199,
+   "p_normal": 0.19417311208049215,
+   "share_of_quarter": 0.6043956043956044,
+   "predicted_pct_beta_fit": -0.7032173352913954,
+   "predicted_pct_day_for_day": -0.6043956043956044,
+   "z_vs_prediction": 0.24782674014971043,
+   "ooni": {
+    "usable": false,
+    "reason": "baseline 0 a day is under 100",
+    "baseline": 0.0
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "SY",
+   "quarter": "2021Q2",
+   "days": 23,
+   "exam": true,
+   "cause": "Exam cheating",
+   "source": "https://smex.org/another-internet-blackout-in-syria-during-exams/",
+   "keepiton_start": "2021-05-31",
+   "pre_quarters": 5,
+   "sdid_pct": 0.006880862967670363,
+   "se": 0.11689779805846205,
+   "p_normal": 0.9532224221924108,
+   "share_of_quarter": 0.25274725274725274,
+   "predicted_pct_beta_fit": -0.3172671957835769,
+   "predicted_pct_day_for_day": -0.25274725274725274,
+   "z_vs_prediction": 3.3234929085658917,
+   "ooni": {
+    "usable": false,
+    "reason": "baseline 33 a day is under 100",
+    "baseline": 33.0
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "SY",
+   "quarter": "2021Q3",
+   "days": 5,
+   "exam": true,
+   "cause": "Exam cheating",
+   "source": "https://twitter.com/alisibai/status/1423209145583407104",
+   "keepiton_start": "2021-08-01",
+   "pre_quarters": 5,
+   "sdid_pct": 0.2349614666513412,
+   "se": 0.20203134537676776,
+   "p_normal": 0.2962128570947862,
+   "share_of_quarter": 0.05434782608695652,
+   "predicted_pct_beta_fit": -0.07058481751200198,
+   "predicted_pct_day_for_day": -0.05434782608695652,
+   "z_vs_prediction": 1.4069078965970334,
+   "ooni": {
+    "usable": false,
+    "reason": "baseline 13 a day is under 100",
+    "baseline": 13.0
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "SY",
+   "quarter": "2022Q2",
+   "days": 32,
+   "exam": true,
+   "cause": "Exam cheating",
+   "source": "https://twitter.com/DougMadory/status/1532345447603478528",
+   "keepiton_start": "2022-05-30",
+   "pre_quarters": 7,
+   "sdid_pct": 0.12874098487070787,
+   "se": 0.13297980976549645,
+   "p_normal": 0.3624608908498823,
+   "share_of_quarter": 0.3516483516483517,
+   "predicted_pct_beta_fit": -0.4331289428337706,
+   "predicted_pct_day_for_day": -0.3516483516483517,
+   "z_vs_prediction": 5.179179107173768,
+   "ooni": {
+    "usable": false,
+    "reason": "baseline 0 a day is under 100",
+    "baseline": 0.0
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "SY",
+   "quarter": "2022Q3",
+   "days": 40,
+   "exam": true,
+   "cause": "Exam cheating",
+   "source": "https://twitter.com/DougMadory/status/1532345447603478528",
+   "keepiton_start": "2022-05-30",
+   "pre_quarters": 7,
+   "sdid_pct": 0.1036946222354261,
+   "se": 0.16173561083130855,
+   "p_normal": 0.5418430627284989,
+   "share_of_quarter": 0.43478260869565216,
+   "predicted_pct_beta_fit": -0.5263924503064138,
+   "predicted_pct_day_for_day": -0.43478260869565216,
+   "z_vs_prediction": 5.23100354592324,
+   "ooni": {
+    "usable": false,
+    "reason": "baseline 0 a day is under 100",
+    "baseline": 0.0
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "SY",
+   "quarter": "2023Q3",
+   "days": 14,
+   "exam": true,
+   "cause": "Exam cheating",
+   "source": "https://twitter.com/CloudflareRadar/status/1689626100660330498",
+   "keepiton_start": "2023-08-10",
+   "pre_quarters": 10,
+   "sdid_pct": 0.09831904440864077,
+   "se": 0.10195032895886233,
+   "p_normal": 0.357641618122686,
+   "share_of_quarter": 0.15217391304347827,
+   "predicted_pct_beta_fit": -0.19446096737312632,
+   "predicted_pct_day_for_day": -0.15217391304347827,
+   "z_vs_prediction": 3.040936626948193,
+   "ooni": {
+    "usable": false,
+    "reason": "baseline 69 a day is under 100",
+    "baseline": 69.0
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "SY",
+   "quarter": "2024Q2",
+   "days": 19,
+   "exam": true,
+   "cause": "Exam cheating",
+   "source": "https://x.com/IODA_live/status/1798354401230487750",
+   "keepiton_start": "2024-05-26",
+   "pre_quarters": 12,
+   "sdid_pct": 0.14003101418722744,
+   "se": 0.0921562277088281,
+   "p_normal": 0.1549969203115844,
+   "share_of_quarter": 0.2087912087912088,
+   "predicted_pct_beta_fit": -0.26418602291281057,
+   "predicted_pct_day_for_day": -0.2087912087912088,
+   "z_vs_prediction": 4.750990997260466,
+   "ooni": {
+    "usable": true,
+    "baseline": 506.0,
+    "days": 91,
+    "disrupted_days": 87,
+    "share": 0.9560439560439561,
+    "mean_depth": 0.9359770664118489,
+    "threshold": 0.5,
+    "first_disrupted": "2024-04-02",
+    "last_disrupted": "2024-06-30"
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "SY",
+   "quarter": "2024Q3",
+   "days": 15,
+   "exam": true,
+   "cause": "Exam cheating",
+   "source": "https://x.com/IODA_live/status/1816481280202006919",
+   "keepiton_start": "2024-07-25",
+   "pre_quarters": 12,
+   "sdid_pct": -0.02469252172572393,
+   "se": 0.14033226909946306,
+   "p_normal": 0.8585922954232215,
+   "share_of_quarter": 0.16304347826086957,
+   "predicted_pct_beta_fit": -0.20796225613674452,
+   "predicted_pct_day_for_day": -0.16304347826086957,
+   "z_vs_prediction": 1.483220772228579,
+   "ooni": {
+    "usable": false,
+    "reason": "baseline 0 a day is under 100",
+    "baseline": 0.0
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "baseline 0 a day is under 1000",
+    "baseline": 0.0
+   }
+  },
+  {
+   "iso2": "TG",
+   "quarter": "2025Q2",
+   "days": 5,
+   "exam": false,
+   "cause": "Protests",
+   "source": "https://explorer.ooni.org/findings/167838678600",
+   "keepiton_start": "2025-06-26",
+   "pre_quarters": 21,
+   "sdid_pct": 0.4445446841949774,
+   "se": 0.2478050354411897,
+   "p_normal": 0.1377537925995176,
+   "share_of_quarter": 0.054945054945054944,
+   "predicted_pct_beta_fit": -0.07135364005464277,
+   "predicted_pct_day_for_day": -0.054945054945054944,
+   "z_vs_prediction": 1.7829397766872404,
+   "ooni": {
+    "usable": false,
+    "reason": "baseline 0 a day is under 100",
+    "baseline": 0.0
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "baseline 0 a day is under 1000",
+    "baseline": 0.0
+   }
+  },
+  {
+   "iso2": "TG",
+   "quarter": "2025Q3",
+   "days": 87,
+   "exam": false,
+   "cause": "Protests",
+   "source": "https://explorer.ooni.org/findings/167838678600",
+   "keepiton_start": "2025-06-26",
+   "pre_quarters": 21,
+   "sdid_pct": 0.4131422239322851,
+   "se": 0.2478050354411897,
+   "p_normal": 0.16286046275298327,
+   "share_of_quarter": 0.9456521739130435,
+   "predicted_pct_beta_fit": -0.9779620188861873,
+   "predicted_pct_day_for_day": -0.9456521739130435,
+   "z_vs_prediction": 16.790633995830216,
+   "ooni": {
+    "usable": false,
+    "reason": "baseline 0 a day is under 100",
+    "baseline": 0.0
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "baseline 0 a day is under 1000",
+    "baseline": 0.0
+   }
+  },
+  {
+   "iso2": "UA",
+   "quarter": "2022Q1",
+   "days": 8,
+   "exam": false,
+   "cause": "Conflict",
+   "source": "https://twitter.com/DougMadory/status/1501910709734678529/photo/1",
+   "keepiton_start": "2022-03-10",
+   "pre_quarters": 8,
+   "sdid_pct": -0.23679569409506898,
+   "se": 0.198691062900953,
+   "p_normal": 0.1738145210260149,
+   "share_of_quarter": 0.08888888888888889,
+   "predicted_pct_beta_fit": -0.11480058709742895,
+   "predicted_pct_day_for_day": -0.08888888888888889,
+   "z_vs_prediction": -0.7463203465090735,
+   "ooni": {
+    "usable": true,
+    "baseline": 6497.0,
+    "days": 90,
+    "disrupted_days": 1,
+    "share": 0.011111111111111112,
+    "mean_depth": 0.011617327655499117,
+    "threshold": 0.5,
+    "first_disrupted": "2022-03-22",
+    "last_disrupted": "2022-03-22"
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "UA",
+   "quarter": "2022Q4",
+   "days": 6,
+   "exam": false,
+   "cause": "Conflict",
+   "source": "https://twitter.com/CloudflareRadar/status/1592586897456521220/photo/1,",
+   "keepiton_start": "2022-11-15",
+   "pre_quarters": 10,
+   "sdid_pct": -0.012626839442499338,
+   "se": 0.13402776557737336,
+   "p_normal": 0.9244653703957009,
+   "share_of_quarter": 0.06521739130434782,
+   "predicted_pct_beta_fit": -0.08455376490132406,
+   "predicted_pct_day_for_day": -0.06521739130434782,
+   "z_vs_prediction": 0.5643338764032518,
+   "ooni": {
+    "usable": true,
+    "baseline": 5739.0,
+    "days": 92,
+    "disrupted_days": 46,
+    "share": 0.5,
+    "mean_depth": 0.4452279218467087,
+    "threshold": 0.5,
+    "first_disrupted": "2022-10-14",
+    "last_disrupted": "2022-12-31"
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "UA",
+   "quarter": "2024Q1",
+   "days": 10,
+   "exam": false,
+   "cause": "Conflict",
+   "source": "https://therecord.media/ukraine-isps-attacks-solntsepek-sandworm-gru",
+   "keepiton_start": "2024-03-13",
+   "pre_quarters": 14,
+   "sdid_pct": -0.06335555677746121,
+   "se": 0.11196762879621709,
+   "p_normal": 0.5588452043959937,
+   "share_of_quarter": 0.10989010989010989,
+   "predicted_pct_beta_fit": -0.14143244106935893,
+   "predicted_pct_day_for_day": -0.10989010989010989,
+   "z_vs_prediction": 0.7773530333936499,
+   "ooni": {
+    "usable": true,
+    "baseline": 4944.0,
+    "days": 91,
+    "disrupted_days": 5,
+    "share": 0.054945054945054944,
+    "mean_depth": 0.13818058963690033,
+    "threshold": 0.5,
+    "first_disrupted": "2024-01-01",
+    "last_disrupted": "2024-02-21"
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "UG",
+   "quarter": "2021Q1",
+   "days": 6,
+   "exam": false,
+   "cause": "Elections",
+   "source": "https://ooni.org/post/2021-uganda-general-election-blocks-and-outage/#facebooks-website",
+   "keepiton_start": "2021-01-13",
+   "pre_quarters": 4,
+   "sdid_pct": -0.26014565496872444,
+   "se": 0.15756841781825645,
+   "p_normal": 0.05585085969315928,
+   "share_of_quarter": 0.06666666666666667,
+   "predicted_pct_beta_fit": -0.08641250314493319,
+   "predicted_pct_day_for_day": -0.06666666666666667,
+   "z_vs_prediction": -1.3386300399792197,
+   "ooni": {
+    "usable": false,
+    "reason": "baseline 0 a day is under 100",
+    "baseline": 0.0
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  },
+  {
+   "iso2": "YE",
+   "quarter": "2022Q1",
+   "days": 5,
+   "exam": false,
+   "cause": "Conflict",
+   "source": "https://shutdowns.yodet.org/2022",
+   "keepiton_start": "2022-01-20",
+   "pre_quarters": 8,
+   "sdid_pct": 0.2671242740012858,
+   "se": 0.27809389590129513,
+   "p_normal": 0.3945854546608931,
+   "share_of_quarter": 0.05555555555555555,
+   "predicted_pct_beta_fit": -0.0721393919165477,
+   "predicted_pct_day_for_day": -0.05555555555555555,
+   "z_vs_prediction": 1.120570248568272,
+   "ooni": {
+    "usable": false,
+    "reason": "baseline 0 a day is under 100",
+    "baseline": 0.0
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   }
+  }
+ ],
+ "dose_beta_used": 1.309934255600411,
+ "non_exam_chi2": 293.2134675812106,
+ "non_exam_n": 11
+}

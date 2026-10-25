@@ -1,60 +1,59 @@
 \documentclass[11pt]{article}
 \usepackage[letterpaper,margin=0.7in]{geometry}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
+\usepackage[scaled=0.92]{helvet}
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage{hyperref}
-\usepackage{tabularx}
 \definecolor{ink}{HTML}{0E1726}\definecolor{acc}{HTML}{2F4BC4}\definecolor{mut}{HTML}{596476}
 \hypersetup{colorlinks,urlcolor=acc}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
 \setlist{nosep,leftmargin=1.1em,itemsep=3pt}
 \renewcommand{\familydefault}{\sfdefault}
+\input{../paper/numbers}
 \begin{document}
 \color{ink}
 {\small\color{mut}MEMO \hfill October 2026}\par\vspace{2pt}
-{\LARGE\bfseries What it costs to turn off a country's internet}\par\vspace{4pt}
-{\small\color{mut}From Matin Nikoomanzar. Data from GitHub's Innovation Graph, 106 control countries, 2020 to early 2026.\\ Code and full write up at \href{https://github.com/MatinNikoo/internet-shutdowns}{github.com/MatinNikoo/internet-shutdowns}}
+{\Large\bfseries What happens to a country's GitHub activity when its internet goes dark?}\par\vspace{4pt}
+{\small\color{mut}From Matin Nikoomanzar. GitHub Innovation Graph, \ndonors{} comparison countries, 2020 to early 2026. Full paper, code and tests at \href{https://github.com/MatinNikoo/internet-shutdowns}{github.com/MatinNikoo/internet-shutdowns}}
 
 \vspace{2pt}\textcolor{acc}{\rule{\linewidth}{1.2pt}}
 
-\textbf{Bottom line.} A country's coding falls by about as much as the share of time the internet is off, and the lost time is never made up. Iran's two blackouts in early 2026 cut its activity on GitHub by about two thirds. Shutdowns shorter than about a month can't be seen in quarterly country data at all, so anyone tracking countries quarterly is missing most of them.
+\textbf{Bottom line.} Iran was offline for about half of early 2026, and the git pushes GitHub places in Iran came in \sdidabsIRc{} below a synthetic twin, or \flatabsIR{} below if Iran would have stayed flat while most of the world jumped that quarter. Myanmar after its 2021 coup is the only other drop that big. This is GitHub's map and says nothing about the economy. Some of the missing activity is people on VPNs being counted in other countries. Shutdowns of a week or so can't be seen in quarterly data.
 
 \vspace{2pt}
 \begin{minipage}[t]{0.52\linewidth}
 \textbf{What I found}
 \begin{itemize}
-\item \textbf{Iran, early 2026:} 69\% below its synthetic twin (95\% interval 61\% to 76\%). Myanmar after its 2021 coup fell 56\%, Sudan after its 2021 coup fell 32\%.
-\item \textbf{No catching up.} Across six full shutdowns, each day offline cost about 1.3 days of work (interval 1.06 to 1.56). If people made up lost time, this would be below 1.
-\item \textbf{Some activity moved, not stopped.} The count of developers GitHub places in a country almost never falls. It fell 6\% in Iran and 12\% in Myanmar, which is what VPNs or people leaving would look like.
-\item \textbf{Simple comparisons mislead.} Against the same quarter a year earlier, Iran's June 2025 blackout quarter looks like +24\% growth. Against its twin it's 18\% lower.
+\item \textbf{Two big drops.} Iran 2026 (\sdidIRc, 95\% interval \sdidloIRc{} to \sdidhiIRc) passes every check I fixed before running them. Myanmar 2021 (\sdidMM) passes every one that can be run, but it has four quarters of history and those checks are weak for it. Sudan 2021 (\sdidSD) fails backdating.
+\item \textbf{Dates from data that isn't GitHub.} Daily OONI network tests put Iran's 2026 blackout at \ooniIRdays{} days, inside the 48 to 58 in my registry. Wikipedia pageviews date Bangladesh 2024 and Tanzania 2025 to the day.
+\item \textbf{Some activity moved.} Repository counts almost never fall (more than 2\% in \repofallbase{} of country quarters). Iran's changed by \repoIR{} and Myanmar's by \repoMM.
+\item \textbf{Crises move it too.} Israel after 7 October 2023, with no shutdown, came in at \ncIL. A drop of 20\% can't be pinned on the internet.
+\item \textbf{Short shutdowns.} The four full shutdowns of 11 days or less pool to \shortpool{} (\shortpoollo{} to \shortpoolhi), so I can't see them.
 \end{itemize}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.45\linewidth}
 \vspace{4pt}
 \includegraphics[width=\linewidth]{../figures/iran.png}\\[-3pt]
-{\scriptsize\color{mut} The twin is a weighted mix of countries that moved like Iran before the event. The gap after is the effect.}
+{\scriptsize\color{mut} The twin is a weighted mix of countries that moved like Iran before the event. The gap after is the estimate.}
 \end{minipage}
 
 \vspace{4pt}
+\textbf{What I got wrong before}
+\begin{itemize}
+\item The first version said ``each day offline cost 1.3 days of work''. \doseinfluence{} of that slope is one event, and it falls to \doseflat{} if Iran missed the 2026 jump. With OONI's count of disrupted days the slope is \cthreebeta{} (\cthreelo{} to \cthreehi). It is positive, but the interval is wider than the 0.5 my plan required before saying anything about a slope of 1, and without Iran 2026 it is \cthreewithout. So I don't say anything about it.
+\item It said developers ``fell'' 6\% in Iran. That was a gap to the twin. The count still grew.
+\end{itemize}
+
 \textbf{How sure I am}
 \begin{itemize}
-\item Two methods (synthetic control and synthetic difference in differences) agree within a few points on every clear result, and the results barely move when the donor pool changes.
-\item I planted 1,500 fake shutdowns of known size in countries that never had one. False alarms stayed under 3\%, bias within 1.5 points, and a drop of 35\% (about a month offline) was caught 88\% of the time. A drop of 10\% (about 9 days) was caught only 6\% of the time.
-\item Every estimate is checked against placebo runs on all 106 control countries and on earlier quarters of the same country.
+\item Three estimators, four alternative donor pools and leave one out agree within a few points on both big drops. Iran 2026 survives a break from the twin's path \bdmIRc{} times the worst one in Iran's own history. Without the \nkioexcluded{} donors that Access Now lists with a full shutdown (Ethiopia is one), Iran 2026 is \poolpctIRc{} and Myanmar \poolpctMM.
+\item \ncrej{} of \ncn{} crises without a shutdown came out significant. Held out pre quarters stay inside the placebo band for Iran 2026. I chose those ten crises after writing the plan and before running them.
+\item A VPN test in likely exit countries has no power. It could miss the whole amount \vpnmde{} times over.
 \end{itemize}
 
-\textbf{What I'd do with this}
-\begin{itemize}
-\item \textbf{Monitor shutdowns with daily data.} Quarterly country metrics only catch the long ones. Flag known shutdown quarters in any country level forecast instead of treating them as noise.
-\item \textbf{Don't forecast a rebound.} Days lost to a shutdown stay lost. The quarter after Iran's 2022 curfews went back to normal, but it didn't make up the gap.
-\item \textbf{Use location drift as a cheap early signal.} A fall in accounts placed in a country is a free indicator of VPN use or people leaving, available from data GitHub already publishes.
-\item \textbf{Never report a before and after.} With a whole world growing at different speeds, a twin is the minimum for a fair comparison.
-\end{itemize}
-
-\textbf{Limits.} Shutdowns come with coups, protests and war, so each number is the cost of the whole crisis. The day by day test is what isolates the internet itself. Iran's twin assumes it would have joined the jump most countries had in early 2026. If it would have stayed flat, the drop is 59\%, which is exactly what its days offline predict.
+\textbf{What I'd do with this.} Study shutdowns with daily data, because quarterly country totals blur them. Treat a drop in attributed activity as partly a change in measurement. And don't compare a shutdown quarter with the quarter before when the whole world is moving.
 
 \end{document}

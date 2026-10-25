@@ -1,0 +1,706 @@
+{
+ "events": [
+  {
+   "event": "KZ-2022",
+   "country": "Kazakhstan",
+   "kind": "full",
+   "outcomes": {
+    "git_pushes": {
+     "sdid": {
+      "pct": -0.0915579029638713,
+      "lo": -0.3852682862854552,
+      "hi": 0.3424832740134469,
+      "se": 0.19925776344525903,
+      "p_normal": 0.6298705269995646,
+      "p_perm": 0.3925233644859813
+     },
+     "sc": {
+      "pct": -0.14744216862170742,
+      "p_normal": 0.48518491678690623
+     },
+     "level_change_vs_last_clean_quarter": -732.0,
+     "pct_change_vs_last_clean_quarter": -0.005129786399058145
+    },
+    "developers": {
+     "sdid": {
+      "pct": 0.005948972499469943,
+      "lo": -0.025980841707482924,
+      "hi": 0.038925494080308314,
+      "se": 0.016456965845779988,
+      "p_normal": 0.7185363618704907,
+      "p_perm": 0.5514018691588785
+     },
+     "sc": {
+      "pct": 0.0011916620993551832,
+      "p_normal": 0.9595371653074827
+     },
+     "level_change_vs_last_clean_quarter": 11213.0,
+     "pct_change_vs_last_clean_quarter": 0.08791682674590917
+    },
+    "repositories": {
+     "sdid": {
+      "pct": -0.014369225989234891,
+      "lo": -0.06282953075862116,
+      "hi": 0.03659692079653798,
+      "se": 0.025722764971723256,
+      "p_normal": 0.5736586923239932,
+      "p_perm": 0.5233644859813084
+     },
+     "sc": {
+      "pct": -0.005586952946875484,
+      "p_normal": 0.8940675776340916
+     },
+     "level_change_vs_last_clean_quarter": 19740.0,
+     "pct_change_vs_last_clean_quarter": 0.08007626310772165
+    },
+    "organizations": {
+     "sdid": {
+      "pct": -0.00860494051352836,
+      "lo": -0.04134707785490527,
+      "hi": 0.0252554822186475,
+      "se": 0.017134698600067708,
+      "p_normal": 0.6140034930259248,
+      "p_perm": 0.45794392523364486
+     },
+     "sc": {
+      "pct": -0.0072707206024312165,
+      "p_normal": 0.7811229647484235
+     },
+     "level_change_vs_last_clean_quarter": 114.0,
+     "pct_change_vs_last_clean_quarter": 0.020357142857142962
+    }
+   },
+   "all_negative": false,
+   "significant": {
+    "git_pushes": false,
+    "developers": false,
+    "repositories": false,
+    "organizations": false
+   }
+  },
+  {
+   "event": "SD-2021",
+   "country": "Sudan",
+   "kind": "full",
+   "outcomes": {
+    "git_pushes": {
+     "sdid": {
+      "pct": -0.3246397898785836,
+      "lo": -0.47398227328129044,
+      "hi": -0.13289725754974147,
+      "se": 0.1275057551036785,
+      "p_normal": 0.002081407310754013,
+      "p_perm": 0.018691588785046728
+     },
+     "sc": {
+      "pct": -0.38431400915459424,
+      "p_normal": 0.0005998007751868428
+     },
+     "level_change_vs_last_clean_quarter": -2711.0,
+     "pct_change_vs_last_clean_quarter": -0.2737830741264391
+    },
+    "developers": {
+     "sdid": {
+      "pct": -0.02258916315798309,
+      "lo": -0.04272011257193048,
+      "hi": -0.0020348734758141402,
+      "se": 0.010617989870482562,
+      "p_normal": 0.03141002153480765,
+      "p_perm": 0.04672897196261682
+     },
+     "sc": {
+      "pct": -0.025754918139515397,
+      "p_normal": 0.1698752116688933
+     },
+     "level_change_vs_last_clean_quarter": 1238.0,
+     "pct_change_vs_last_clean_quarter": 0.06208937258638847
+    },
+    "repositories": {
+     "sdid": {
+      "pct": -0.05157332108893136,
+      "lo": -0.09340102316719763,
+      "hi": -0.007815816853530234,
+      "se": 0.02301238485080113,
+      "p_normal": 0.02139335737691961,
+      "p_perm": 0.04672897196261682
+     },
+     "sc": {
+      "pct": -0.048307108176350935,
+      "p_normal": 0.17749238184280713
+     },
+     "level_change_vs_last_clean_quarter": 1124.0,
+     "pct_change_vs_last_clean_quarter": 0.04572079401236584
+    },
+    "organizations": {
+     "sdid": {
+      "pct": -0.03796808716330831,
+      "lo": -0.061559150012915065,
+      "hi": -0.013783978682342097,
+      "se": 0.012667242663933494,
+      "p_normal": 0.0022451439533592854,
+      "p_perm": 0.028037383177570093
+     },
+     "sc": {
+      "pct": -0.03846385187421665,
+      "p_normal": 0.0634281349627599
+     },
+     "level_change_vs_last_clean_quarter": -2.0,
+     "pct_change_vs_last_clean_quarter": -0.0014869888475836923
+    }
+   },
+   "all_negative": true,
+   "significant": {
+    "git_pushes": true,
+    "developers": true,
+    "repositories": true,
+    "organizations": true
+   }
+  },
+  {
+   "event": "BD-2024",
+   "country": "Bangladesh",
+   "kind": "full",
+   "outcomes": {
+    "git_pushes": {
+     "sdid": {
+      "pct": 0.1079925662262535,
+      "lo": -0.2361439269594696,
+      "hi": 0.6071712592739961,
+      "se": 0.18975804732429058,
+      "p_normal": 0.5889043835470504,
+      "p_perm": 0.14953271028037382
+     },
+     "sc": {
+      "pct": 0.06104111894533022,
+      "p_normal": 0.7078806666044173
+     },
+     "level_change_vs_last_clean_quarter": 325006.0,
+     "pct_change_vs_last_clean_quarter": 0.2602838242596064
+    },
+    "developers": {
+     "sdid": {
+      "pct": -0.027891480322063518,
+      "lo": -0.1036662666484217,
+      "hi": 0.05428919928841261,
+      "se": 0.041405423522524194,
+      "p_normal": 0.49448581875958864,
+      "p_perm": 0.018691588785046728
+     },
+     "sc": {
+      "pct": -0.013940820722828633,
+      "p_normal": 0.8223094696895499
+     },
+     "level_change_vs_last_clean_quarter": 46466.0,
+     "pct_change_vs_last_clean_quarter": 0.03869213167282304
+    },
+    "repositories": {
+     "sdid": {
+      "pct": 0.0028138983472110676,
+      "lo": -0.07923216343785908,
+      "hi": 0.09217076746844217,
+      "se": 0.04354964225291473,
+      "p_normal": 0.9485539186180407,
+      "p_perm": 0.8504672897196262
+     },
+     "sc": {
+      "pct": -0.005421998532106083,
+      "p_normal": 0.9140480243125482
+     },
+     "level_change_vs_last_clean_quarter": 188806.0,
+     "pct_change_vs_last_clean_quarter": 0.05878907691316093
+    },
+    "organizations": {
+     "sdid": {
+      "pct": -0.13633585750168278,
+      "lo": -0.2007665945342655,
+      "hi": -0.06671099338911049,
+      "se": 0.03955660417317678,
+      "p_normal": 0.00021109384077089288,
+      "p_perm": 0.009345794392523364
+     },
+     "sc": {
+      "pct": -0.07274730119038918,
+      "p_normal": 0.04921651730307475
+     },
+     "level_change_vs_last_clean_quarter": -5590.0,
+     "pct_change_vs_last_clean_quarter": -0.10453287456055049
+    }
+   },
+   "all_negative": false,
+   "significant": {
+    "git_pushes": false,
+    "developers": false,
+    "repositories": false,
+    "organizations": true
+   }
+  },
+  {
+   "event": "TZ-2025",
+   "country": "Tanzania",
+   "kind": "full",
+   "outcomes": {
+    "git_pushes": {
+     "sdid": {
+      "pct": -0.051147710966354766,
+      "lo": -0.22173585345156624,
+      "hi": 0.15683173945153406,
+      "se": 0.10111589330960717,
+      "p_normal": 0.6036021795524471,
+      "p_perm": 0.42990654205607476
+     },
+     "sc": {
+      "pct": 0.04095099663899593,
+      "p_normal": 0.719305355148188
+     },
+     "level_change_vs_last_clean_quarter": 15696.0,
+     "pct_change_vs_last_clean_quarter": 0.135249715644711
+    },
+    "developers": {
+     "sdid": {
+      "pct": -0.011681261995026587,
+      "lo": -0.04717555916008364,
+      "hi": 0.025135256848276694,
+      "se": 0.018660502923541905,
+      "p_normal": 0.5289082325525809,
+      "p_perm": 0.3364485981308411
+     },
+     "sc": {
+      "pct": 0.023687691058575815,
+      "p_normal": 0.428233145406411
+     },
+     "level_change_vs_last_clean_quarter": 9546.0,
+     "pct_change_vs_last_clean_quarter": 0.09883931622161701
+    },
+    "repositories": {
+     "sdid": {
+      "pct": -0.015824395117780974,
+      "lo": -0.06493097826432681,
+      "hi": 0.03586109552358539,
+      "se": 0.02611428304795935,
+      "p_normal": 0.5413235373254655,
+      "p_perm": 0.205607476635514
+     },
+     "sc": {
+      "pct": -0.004966566898996635,
+      "p_normal": 0.9100461140466154
+     },
+     "level_change_vs_last_clean_quarter": 12407.0,
+     "pct_change_vs_last_clean_quarter": 0.06237086711943807
+    },
+    "organizations": {
+     "sdid": {
+      "pct": -0.02218796638089329,
+      "lo": -0.05940280475379775,
+      "hi": 0.016499281437968416,
+      "se": 0.019797178199170543,
+      "p_normal": 0.2570526683482415,
+      "p_perm": 0.14018691588785046
+     },
+     "sc": {
+      "pct": -0.02333673211352286,
+      "p_normal": 0.5789563025099258
+     },
+     "level_change_vs_last_clean_quarter": 102.0,
+     "pct_change_vs_last_clean_quarter": 0.02055208543219833
+    }
+   },
+   "all_negative": true,
+   "significant": {
+    "git_pushes": false,
+    "developers": false,
+    "repositories": false,
+    "organizations": false
+   }
+  },
+  {
+   "event": "IR-2025",
+   "country": "Iran",
+   "kind": "full",
+   "outcomes": {
+    "git_pushes": {
+     "sdid": {
+      "pct": -0.1778074833708368,
+      "lo": -0.35356161653190515,
+      "hi": 0.0457308100646858,
+      "se": 0.12270239131133498,
+      "p_normal": 0.11058400744977304,
+      "p_perm": 0.07476635514018691
+     },
+     "sc": {
+      "pct": -0.20358255259962274,
+      "p_normal": 0.07111887365628422
+     },
+     "level_change_vs_last_clean_quarter": 62689.0,
+     "pct_change_vs_last_clean_quarter": 0.11079533906318217
+    },
+    "developers": {
+     "sdid": {
+      "pct": -0.01161381371410578,
+      "lo": -0.03497206901868561,
+      "hi": 0.012309822211446449,
+      "se": 0.012202272061638406,
+      "p_normal": 0.3383932875836515,
+      "p_perm": 0.2897196261682243
+     },
+     "sc": {
+      "pct": -0.01776928290031406,
+      "p_normal": 0.44810332619472404
+     },
+     "level_change_vs_last_clean_quarter": 31106.0,
+     "pct_change_vs_last_clean_quarter": 0.04145835971184675
+    },
+    "repositories": {
+     "sdid": {
+      "pct": -0.005932244548008276,
+      "lo": -0.040837200555622295,
+      "hi": 0.030242939990778175,
+      "se": 0.018237014647313282,
+      "p_normal": 0.7442317223823471,
+      "p_perm": 0.5514018691588785
+     },
+     "sc": {
+      "pct": -0.005306496192972882,
+      "p_normal": 0.9076310434722248
+     },
+     "level_change_vs_last_clean_quarter": 49316.0,
+     "pct_change_vs_last_clean_quarter": 0.046866610343611725
+    },
+    "organizations": {
+     "sdid": {
+      "pct": -0.003570910756150694,
+      "lo": -0.04134983299789644,
+      "hi": 0.035696820453532924,
+      "se": 0.019720284865039968,
+      "p_normal": 0.8560519471947985,
+      "p_perm": 0.7570093457943925
+     },
+     "sc": {
+      "pct": -0.005146073740988949,
+      "p_normal": 0.8961053190805495
+     },
+     "level_change_vs_last_clean_quarter": 1053.0,
+     "pct_change_vs_last_clean_quarter": 0.028673347129942295
+    }
+   },
+   "all_negative": true,
+   "significant": {
+    "git_pushes": false,
+    "developers": false,
+    "repositories": false,
+    "organizations": false
+   }
+  },
+  {
+   "event": "IR-2026",
+   "country": "Iran",
+   "kind": "full",
+   "outcomes": {
+    "git_pushes": {
+     "sdid": {
+      "pct": -0.6898128971248242,
+      "lo": -0.7557461920493912,
+      "hi": -0.6060817245905495,
+      "se": 0.1219223428014352,
+      "p_normal": 0.0,
+      "p_perm": 0.009345794392523364
+     },
+     "sc": {
+      "pct": -0.7038354062328359,
+      "p_normal": 0.0
+     },
+     "level_change_vs_last_clean_quarter": -467278.0,
+     "pct_change_vs_last_clean_quarter": -0.5853266860406854
+    },
+    "developers": {
+     "sdid": {
+      "pct": -0.06401230885766442,
+      "lo": -0.09011875822180528,
+      "hi": -0.03715680932399759,
+      "se": 0.014432774718389552,
+      "p_normal": 4.572068395436446e-06,
+      "p_perm": 0.009345794392523364
+     },
+     "sc": {
+      "pct": -0.07444844651600675,
+      "p_normal": 0.015728764615694724
+     },
+     "level_change_vs_last_clean_quarter": 8915.0,
+     "pct_change_vs_last_clean_quarter": 0.010020884805348684
+    },
+    "repositories": {
+     "sdid": {
+      "pct": -0.09375526064658445,
+      "lo": -0.12904898454848784,
+      "hi": -0.05703132204286106,
+      "se": 0.020267176257815562,
+      "p_normal": 1.1893433431442446e-06,
+      "p_perm": 0.009345794392523364
+     },
+     "sc": {
+      "pct": -0.09834296604839027,
+      "p_normal": 0.033229956735263855
+     },
+     "level_change_vs_last_clean_quarter": -53341.0,
+     "pct_change_vs_last_clean_quarter": -0.04461251652865261
+    },
+    "organizations": {
+     "sdid": {
+      "pct": -0.08772472855588026,
+      "lo": -0.16024828817563205,
+      "hi": -0.008937809629014906,
+      "se": 0.04226301544522611,
+      "p_normal": 0.029823138887071998,
+      "p_perm": 0.037383177570093455
+     },
+     "sc": {
+      "pct": -0.08806222441767303,
+      "p_normal": 0.13145731004636474
+     },
+     "level_change_vs_last_clean_quarter": -1980.0,
+     "pct_change_vs_last_clean_quarter": -0.05064845368736093
+    }
+   },
+   "all_negative": true,
+   "significant": {
+    "git_pushes": true,
+    "developers": true,
+    "repositories": true,
+    "organizations": true
+   }
+  },
+  {
+   "event": "IR-2022",
+   "country": "Iran",
+   "kind": "partial",
+   "outcomes": {
+    "git_pushes": {
+     "sdid": {
+      "pct": -0.22031092656834456,
+      "lo": -0.43130627107012426,
+      "hi": 0.06896739018494427,
+      "se": 0.16099652509249618,
+      "p_normal": 0.12216543103149125,
+      "p_perm": 0.07476635514018691
+     },
+     "sc": {
+      "pct": -0.23809654629151172,
+      "p_normal": 0.14432398700953097
+     },
+     "level_change_vs_last_clean_quarter": -44821.0,
+     "pct_change_vs_last_clean_quarter": -0.1260039751371197
+    },
+    "developers": {
+     "sdid": {
+      "pct": 0.0058223924245055505,
+      "lo": -0.029564973402022923,
+      "hi": 0.04250017504949871,
+      "se": 0.018273640203422974,
+      "p_normal": 0.7507136606365465,
+      "p_perm": 0.5233644859813084
+     },
+     "sc": {
+      "pct": -0.007171373804899178,
+      "p_normal": 0.7715802057554648
+     },
+     "level_change_vs_last_clean_quarter": 49854.0,
+     "pct_change_vs_last_clean_quarter": 0.1238670244484199
+    },
+    "repositories": {
+     "sdid": {
+      "pct": -0.05125871584284147,
+      "lo": -0.1232036777732229,
+      "hi": 0.026589643964504684,
+      "se": 0.04023541855316069,
+      "p_normal": 0.19094742281080102,
+      "p_perm": 0.102803738317757
+     },
+     "sc": {
+      "pct": -0.04472857958770567,
+      "p_normal": 0.4553291305497633
+     },
+     "level_change_vs_last_clean_quarter": 59133.0,
+     "pct_change_vs_last_clean_quarter": 0.10413599509724492
+    },
+    "organizations": {
+     "sdid": {
+      "pct": -0.022645886659897932,
+      "lo": -0.07457668253627879,
+      "hi": 0.032199043223550515,
+      "se": 0.027856001391990588,
+      "p_normal": 0.41090100926719453,
+      "p_perm": 0.19626168224299065
+     },
+     "sc": {
+      "pct": -0.018429412298908692,
+      "p_normal": 0.5871067354784296
+     },
+     "level_change_vs_last_clean_quarter": 817.0,
+     "pct_change_vs_last_clean_quarter": 0.030554620591645154
+    }
+   },
+   "all_negative": false,
+   "significant": {
+    "git_pushes": false,
+    "developers": false,
+    "repositories": false,
+    "organizations": false
+   }
+  },
+  {
+   "event": "MM-2021",
+   "country": "Myanmar",
+   "kind": "partial",
+   "outcomes": {
+    "git_pushes": {
+     "sdid": {
+      "pct": -0.5642048225790701,
+      "lo": -0.6865328012805916,
+      "hi": -0.3941393631001912,
+      "se": 0.16810083219244396,
+      "p_normal": 7.773070986871744e-07,
+      "p_perm": 0.018691588785046728
+     },
+     "sc": {
+      "pct": -0.5675096569262776,
+      "p_normal": 5.428959841236036e-06
+     },
+     "level_change_vs_last_clean_quarter": -28058.0,
+     "pct_change_vs_last_clean_quarter": -0.46077545859129954
+    },
+    "developers": {
+     "sdid": {
+      "pct": -0.11669880460231871,
+      "lo": -0.14275014000292618,
+      "hi": -0.0898557839442097,
+      "se": 0.015273887272933715,
+      "p_normal": 4.440892098500626e-16,
+      "p_perm": 0.009345794392523364
+     },
+     "sc": {
+      "pct": -0.1239918629824728,
+      "p_normal": 2.1538326677728037e-13
+     },
+     "level_change_vs_last_clean_quarter": 3341.0,
+     "pct_change_vs_last_clean_quarter": 0.04724131104889562
+    },
+    "repositories": {
+     "sdid": {
+      "pct": -0.19345879653302517,
+      "lo": -0.2501923166335031,
+      "hi": -0.13243258595418347,
+      "se": 0.03721338470580806,
+      "p_normal": 7.581916428023305e-09,
+      "p_perm": 0.018691588785046728
+     },
+     "sc": {
+      "pct": -0.19413541158427133,
+      "p_normal": 4.467888614634319e-07
+     },
+     "level_change_vs_last_clean_quarter": 2450.0,
+     "pct_change_vs_last_clean_quarter": 0.024984448455553254
+    },
+    "organizations": {
+     "sdid": {
+      "pct": -0.0820125936843291,
+      "lo": -0.11428705614488036,
+      "hi": -0.04856208323402655,
+      "se": 0.018260594357944616,
+      "p_normal": 2.784128996236035e-06,
+      "p_perm": 0.018691588785046728
+     },
+     "sc": {
+      "pct": -0.08202036662466078,
+      "p_normal": 0.0008539050726472652
+     },
+     "level_change_vs_last_clean_quarter": 23.0,
+     "pct_change_vs_last_clean_quarter": 0.003774823568028829
+    }
+   },
+   "all_negative": true,
+   "significant": {
+    "git_pushes": true,
+    "developers": true,
+    "repositories": true,
+    "organizations": true
+   }
+  },
+  {
+   "event": "PK-2023",
+   "country": "Pakistan",
+   "kind": "partial",
+   "outcomes": {
+    "git_pushes": {
+     "sdid": {
+      "pct": 0.03394235819285205,
+      "lo": -0.1732440137999695,
+      "hi": 0.29304996626507224,
+      "se": 0.11409424214750921,
+      "p_normal": 0.769861060676551,
+      "p_perm": 0.7383177570093458
+     },
+     "sc": {
+      "pct": 0.0689759912154094,
+      "p_normal": 0.5910126618986316
+     },
+     "level_change_vs_last_clean_quarter": 56043.0,
+     "pct_change_vs_last_clean_quarter": 0.0667764455242279
+    },
+    "developers": {
+     "sdid": {
+      "pct": 0.003318738189864229,
+      "lo": -0.02548285071341576,
+      "hi": 0.03297155020805894,
+      "se": 0.014860410961785964,
+      "p_normal": 0.8235684135028614,
+      "p_perm": 0.7102803738317757
+     },
+     "sc": {
+      "pct": -0.0011681423685661104,
+      "p_normal": 0.9645455576455686
+     },
+     "level_change_vs_last_clean_quarter": 79269.0,
+     "pct_change_vs_last_clean_quarter": 0.08570816903114054
+    },
+    "repositories": {
+     "sdid": {
+      "pct": 0.007319707915862122,
+      "lo": -0.08347023499641903,
+      "hi": 0.10710315442044949,
+      "se": 0.04819070626411678,
+      "p_normal": 0.8797096879772406,
+      "p_perm": 0.616822429906542
+     },
+     "sc": {
+      "pct": 0.005071549141624013,
+      "p_normal": 0.9468067658605139
+     },
+     "level_change_vs_last_clean_quarter": 140697.0,
+     "pct_change_vs_last_clean_quarter": 0.07880149720436336
+    },
+    "organizations": {
+     "sdid": {
+      "pct": -0.0016009256687261567,
+      "lo": -0.04507368927094652,
+      "hi": 0.0438509238105727,
+      "se": 0.022713721683263507,
+      "p_normal": 0.9437644744145515,
+      "p_perm": 0.8878504672897196
+     },
+     "sc": {
+      "pct": -0.003083462417946564,
+      "p_normal": 0.9334578869935133
+     },
+     "level_change_vs_last_clean_quarter": 1553.0,
+     "pct_change_vs_last_clean_quarter": 0.037919667928213885
+    }
+   },
+   "all_negative": false,
+   "significant": {
+    "git_pushes": false,
+    "developers": false,
+    "repositories": false,
+    "organizations": false
+   }
+  }
+ ]
+}

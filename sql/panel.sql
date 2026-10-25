@@ -16,6 +16,11 @@ SELECT iso2_code AS iso2, year, quarter, repositories
 FROM read_csv_auto('data/raw/repositories.csv')
 WHERE iso2_code IS NOT NULL AND iso2_code <> 'EU';
 
+CREATE OR REPLACE TABLE orgs AS
+SELECT iso2_code AS iso2, year, quarter, organizations
+FROM read_csv_auto('data/raw/organizations.csv')
+WHERE iso2_code IS NOT NULL AND iso2_code <> 'EU';
+
 -- quarter index: 2020Q1 = 0
 CREATE OR REPLACE TABLE panel AS
 SELECT p.iso2,
@@ -24,14 +29,18 @@ SELECT p.iso2,
        p.git_pushes,
        d.developers,
        r.repositories,
+       o.organizations,
        ln(p.git_pushes)                    AS log_pushes,
        ln(r.repositories)                  AS log_repos,
-       ln(d.developers)                    AS log_devs
+       ln(d.developers)                    AS log_devs,
+       ln(o.organizations)                 AS log_orgs
 FROM pushes p
 LEFT JOIN devs  d USING (iso2, year, quarter)
-LEFT JOIN repos r USING (iso2, year, quarter);
+LEFT JOIN repos r USING (iso2, year, quarter)
+LEFT JOIN orgs  o USING (iso2, year, quarter);
 
--- keep economies seen in every quarter and big enough that the series isn't mostly noise
+-- keep economies seen in every quarter (organizations can be missing, that outcome
+-- just uses the economies that have it)
 CREATE OR REPLACE TABLE eligible AS
 WITH n AS (SELECT max(t) + 1 AS quarters FROM panel)
 SELECT iso2,

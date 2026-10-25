@@ -1,0 +1,743 @@
+{
+ "events": [
+  {
+   "event": "KZ-2022",
+   "kind": "full",
+   "quarters": [
+    "2022Q1"
+   ],
+   "registry_days": [
+    4.5,
+    6.0
+   ],
+   "ooni": {
+    "0.25": {
+     "usable": true,
+     "baseline": 1498.0,
+     "days": 90,
+     "disrupted_days": 6,
+     "share": 0.06666666666666667,
+     "mean_depth": 0.10199525292983237,
+     "threshold": 0.25,
+     "first_disrupted": "2022-01-03",
+     "last_disrupted": "2022-03-03"
+    },
+    "0.5": {
+     "usable": true,
+     "baseline": 1498.0,
+     "days": 90,
+     "disrupted_days": 10,
+     "share": 0.1111111111111111,
+     "mean_depth": 0.10199525292983237,
+     "threshold": 0.5,
+     "first_disrupted": "2022-01-01",
+     "last_disrupted": "2022-03-27"
+    },
+    "0.75": {
+     "usable": true,
+     "baseline": 1498.0,
+     "days": 90,
+     "disrupted_days": 13,
+     "share": 0.14444444444444443,
+     "mean_depth": 0.10199525292983237,
+     "threshold": 0.75,
+     "first_disrupted": "2022-01-01",
+     "last_disrupted": "2022-03-27"
+    }
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   },
+   "ooni_runs": [
+    [
+     "2022-01-06",
+     "2022-01-09",
+     4
+    ]
+   ],
+   "timing": {
+    "window": [
+     "2022-01-05",
+     "2022-01-10"
+    ],
+    "ooni_run_in_window": true,
+    "chance_rate": 0.11854545454545455,
+    "n_quiet": 1375,
+    "window_disrupted_days": 5,
+    "window_share": 0.05555555555555555
+   },
+   "sdid": {
+    "log": -0.0960241278648582,
+    "se": 0.19925776344525903,
+    "pct": -0.0915579029638713
+   }
+  },
+  {
+   "event": "SD-2021",
+   "kind": "full",
+   "quarters": [
+    "2021Q4"
+   ],
+   "registry_days": [
+    23.0,
+    25.0
+   ],
+   "ooni": {
+    "0.25": {
+     "usable": false,
+     "reason": "baseline 19 a day is under 100",
+     "baseline": 19.0
+    },
+    "0.5": {
+     "usable": false,
+     "reason": "baseline 19 a day is under 100",
+     "baseline": 19.0
+    },
+    "0.75": {
+     "usable": false,
+     "reason": "baseline 19 a day is under 100",
+     "baseline": 19.0
+    }
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   },
+   "sdid": {
+    "log": -0.39250908582294297,
+    "se": 0.1275057551036785,
+    "pct": -0.3246397898785836
+   }
+  },
+  {
+   "event": "BD-2024",
+   "kind": "full",
+   "quarters": [
+    "2024Q3"
+   ],
+   "registry_days": [
+    7.0,
+    11.0
+   ],
+   "ooni": {
+    "0.25": {
+     "usable": true,
+     "baseline": 8580.0,
+     "days": 92,
+     "disrupted_days": 5,
+     "share": 0.05434782608695652,
+     "mean_depth": 0.07128939900679032,
+     "threshold": 0.25,
+     "first_disrupted": "2024-07-19",
+     "last_disrupted": "2024-07-23"
+    },
+    "0.5": {
+     "usable": true,
+     "baseline": 8580.0,
+     "days": 92,
+     "disrupted_days": 5,
+     "share": 0.05434782608695652,
+     "mean_depth": 0.07128939900679032,
+     "threshold": 0.5,
+     "first_disrupted": "2024-07-19",
+     "last_disrupted": "2024-07-23"
+    },
+    "0.75": {
+     "usable": true,
+     "baseline": 8580.0,
+     "days": 92,
+     "disrupted_days": 8,
+     "share": 0.08695652173913043,
+     "mean_depth": 0.07128939900679032,
+     "threshold": 0.75,
+     "first_disrupted": "2024-07-03",
+     "last_disrupted": "2024-07-23"
+    }
+   },
+   "wikimedia": {
+    "usable": true,
+    "baseline": 153510.0,
+    "days": 92,
+    "disrupted_days": 6,
+    "share": 0.06521739130434782,
+    "mean_depth": 0.133190303421672,
+    "threshold": 0.5,
+    "first_disrupted": "2024-07-18",
+    "last_disrupted": "2024-07-23"
+   },
+   "ooni_runs": [
+    [
+     "2024-07-19",
+     "2024-07-23",
+     5
+    ]
+   ],
+   "timing": {
+    "window": [
+     "2024-07-18",
+     "2024-08-05"
+    ],
+    "ooni_run_in_window": true,
+    "chance_rate": 0.1890909090909091,
+    "n_quiet": 1375,
+    "window_disrupted_days": 5,
+    "window_share": 0.05434782608695652
+   },
+   "wikimedia_runs": [
+    [
+     "2024-07-18",
+     "2024-07-23",
+     6
+    ]
+   ],
+   "sdid": {
+    "log": 0.10254987912050373,
+    "se": 0.18975804732429058,
+    "pct": 0.1079925662262535
+   }
+  },
+  {
+   "event": "TZ-2025",
+   "kind": "full",
+   "quarters": [
+    "2025Q4"
+   ],
+   "registry_days": [
+    5.0,
+    5.0
+   ],
+   "ooni": {
+    "0.25": {
+     "usable": true,
+     "baseline": 5809.0,
+     "days": 92,
+     "disrupted_days": 4,
+     "share": 0.043478260869565216,
+     "mean_depth": 0.11282904338844521,
+     "threshold": 0.25,
+     "first_disrupted": "2025-10-30",
+     "last_disrupted": "2025-11-02"
+    },
+    "0.5": {
+     "usable": true,
+     "baseline": 5809.0,
+     "days": 92,
+     "disrupted_days": 7,
+     "share": 0.07608695652173914,
+     "mean_depth": 0.11282904338844521,
+     "threshold": 0.5,
+     "first_disrupted": "2025-10-11",
+     "last_disrupted": "2025-11-03"
+    },
+    "0.75": {
+     "usable": true,
+     "baseline": 5809.0,
+     "days": 92,
+     "disrupted_days": 13,
+     "share": 0.14130434782608695,
+     "mean_depth": 0.11282904338844521,
+     "threshold": 0.75,
+     "first_disrupted": "2025-10-04",
+     "last_disrupted": "2025-12-28"
+    }
+   },
+   "wikimedia": {
+    "usable": true,
+    "baseline": 7513.0,
+    "days": 92,
+    "disrupted_days": 5,
+    "share": 0.05434782608695652,
+    "mean_depth": 0.0719839235180759,
+    "threshold": 0.5,
+    "first_disrupted": "2025-10-29",
+    "last_disrupted": "2025-11-02"
+   },
+   "ooni_runs": [
+    [
+     "2025-10-30",
+     "2025-11-03",
+     5
+    ]
+   ],
+   "timing": {
+    "window": [
+     "2025-10-29",
+     "2025-11-03"
+    ],
+    "ooni_run_in_window": true,
+    "chance_rate": 0.136,
+    "n_quiet": 1375,
+    "window_disrupted_days": 5,
+    "window_share": 0.05434782608695652
+   },
+   "wikimedia_runs": [
+    [
+     "2025-10-29",
+     "2025-11-02",
+     5
+    ]
+   ],
+   "sdid": {
+    "log": -0.052502141555649584,
+    "se": 0.10111589330960717,
+    "pct": -0.051147710966354766
+   }
+  },
+  {
+   "event": "IR-2025",
+   "kind": "full",
+   "quarters": [
+    "2025Q2"
+   ],
+   "registry_days": [
+    7.0,
+    9.0
+   ],
+   "ooni": {
+    "0.25": {
+     "usable": true,
+     "baseline": 12006.0,
+     "days": 91,
+     "disrupted_days": 8,
+     "share": 0.08791208791208792,
+     "mean_depth": 0.33519870101579247,
+     "threshold": 0.25,
+     "first_disrupted": "2025-06-14",
+     "last_disrupted": "2025-06-22"
+    },
+    "0.5": {
+     "usable": true,
+     "baseline": 12006.0,
+     "days": 91,
+     "disrupted_days": 15,
+     "share": 0.16483516483516483,
+     "mean_depth": 0.33519870101579247,
+     "threshold": 0.5,
+     "first_disrupted": "2025-05-02",
+     "last_disrupted": "2025-06-25"
+    },
+    "0.75": {
+     "usable": true,
+     "baseline": 12006.0,
+     "days": 91,
+     "disrupted_days": 61,
+     "share": 0.6703296703296703,
+     "mean_depth": 0.33519870101579247,
+     "threshold": 0.75,
+     "first_disrupted": "2025-04-01",
+     "last_disrupted": "2025-06-26"
+    }
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "baseline 0 a day is under 1000",
+    "baseline": 0.0
+   },
+   "ooni_runs": [
+    [
+     "2025-05-02",
+     "2025-05-03",
+     2
+    ],
+    [
+     "2025-06-13",
+     "2025-06-25",
+     13
+    ]
+   ],
+   "timing": {
+    "window": [
+     "2025-06-17",
+     "2025-06-25"
+    ],
+    "ooni_run_in_window": true,
+    "chance_rate": 0.19563636363636364,
+    "n_quiet": 1375,
+    "window_disrupted_days": 12,
+    "window_share": 0.13186813186813187
+   },
+   "sdid": {
+    "log": -0.19578070620273325,
+    "se": 0.12270239131133498,
+    "pct": -0.1778074833708368
+   }
+  },
+  {
+   "event": "IR-2026",
+   "kind": "full",
+   "quarters": [
+    "2026Q1"
+   ],
+   "registry_days": [
+    48.0,
+    58.0
+   ],
+   "ooni": {
+    "0.25": {
+     "usable": true,
+     "baseline": 14699.0,
+     "days": 90,
+     "disrupted_days": 49,
+     "share": 0.5444444444444444,
+     "mean_depth": 0.5223930577287949,
+     "threshold": 0.25,
+     "first_disrupted": "2026-01-09",
+     "last_disrupted": "2026-03-31"
+    },
+    "0.5": {
+     "usable": true,
+     "baseline": 14699.0,
+     "days": 90,
+     "disrupted_days": 49,
+     "share": 0.5444444444444444,
+     "mean_depth": 0.5223930577287949,
+     "threshold": 0.5,
+     "first_disrupted": "2026-01-09",
+     "last_disrupted": "2026-03-31"
+    },
+    "0.75": {
+     "usable": true,
+     "baseline": 14699.0,
+     "days": 90,
+     "disrupted_days": 52,
+     "share": 0.5777777777777777,
+     "mean_depth": 0.5223930577287949,
+     "threshold": 0.75,
+     "first_disrupted": "2026-01-08",
+     "last_disrupted": "2026-03-31"
+    }
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "baseline 0 a day is under 1000",
+    "baseline": 0.0
+   },
+   "ooni_runs": [
+    [
+     "2026-01-09",
+     "2026-01-26",
+     18
+    ],
+    [
+     "2026-03-01",
+     "2026-03-31",
+     31
+    ]
+   ],
+   "timing": {
+    "window": [
+     "2026-01-08",
+     "2026-03-31"
+    ],
+    "ooni_run_in_window": true,
+    "chance_rate": 0.41309090909090906,
+    "n_quiet": 1375,
+    "window_disrupted_days": 49,
+    "window_share": 0.5444444444444444
+   },
+   "sdid": {
+    "log": -1.1705796059087579,
+    "se": 0.1219223428014352,
+    "pct": -0.6898128971248242
+   }
+  },
+  {
+   "event": "IR-2022",
+   "kind": "partial",
+   "quarters": [
+    "2022Q4"
+   ],
+   "registry_days": null,
+   "ooni": {
+    "0.25": {
+     "usable": true,
+     "baseline": 41692.0,
+     "days": 92,
+     "disrupted_days": 0,
+     "share": 0.0,
+     "mean_depth": 0.11972425113357167,
+     "threshold": 0.25,
+     "first_disrupted": null,
+     "last_disrupted": null
+    },
+    "0.5": {
+     "usable": true,
+     "baseline": 41692.0,
+     "days": 92,
+     "disrupted_days": 2,
+     "share": 0.021739130434782608,
+     "mean_depth": 0.11972425113357167,
+     "threshold": 0.5,
+     "first_disrupted": "2022-10-06",
+     "last_disrupted": "2022-10-07"
+    },
+    "0.75": {
+     "usable": true,
+     "baseline": 41692.0,
+     "days": 92,
+     "disrupted_days": 25,
+     "share": 0.2717391304347826,
+     "mean_depth": 0.11972425113357167,
+     "threshold": 0.75,
+     "first_disrupted": "2022-10-05",
+     "last_disrupted": "2022-11-01"
+    }
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   },
+   "ooni_runs": [
+    [
+     "2022-10-06",
+     "2022-10-07",
+     2
+    ]
+   ],
+   "timing": {
+    "window": [
+     "2022-09-21",
+     "2022-10-15"
+    ],
+    "ooni_run_in_window": false,
+    "chance_rate": 0.16945454545454544,
+    "n_quiet": 1375,
+    "window_disrupted_days": 2,
+    "window_share": 0.021739130434782608
+   },
+   "sdid": {
+    "log": -0.24886006257565896,
+    "se": 0.16099652509249618,
+    "pct": -0.22031092656834456
+   }
+  },
+  {
+   "event": "MM-2021",
+   "kind": "partial",
+   "quarters": [
+    "2021Q1",
+    "2021Q2"
+   ],
+   "registry_days": null,
+   "ooni": {
+    "0.25": {
+     "usable": false,
+     "reason": "baseline 2 a day is under 100",
+     "baseline": 2.0
+    },
+    "0.5": {
+     "usable": false,
+     "reason": "baseline 2 a day is under 100",
+     "baseline": 2.0
+    },
+    "0.75": {
+     "usable": false,
+     "reason": "baseline 2 a day is under 100",
+     "baseline": 2.0
+    }
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   },
+   "sdid": {
+    "log": -0.8305829225701806,
+    "se": 0.16810083219244396,
+    "pct": -0.5642048225790701
+   }
+  },
+  {
+   "event": "PK-2023",
+   "kind": "partial",
+   "quarters": [
+    "2023Q2"
+   ],
+   "registry_days": null,
+   "ooni": {
+    "0.25": {
+     "usable": true,
+     "baseline": 2473.0,
+     "days": 91,
+     "disrupted_days": 3,
+     "share": 0.03296703296703297,
+     "mean_depth": 0.13859129144207996,
+     "threshold": 0.25,
+     "first_disrupted": "2023-04-02",
+     "last_disrupted": "2023-04-16"
+    },
+    "0.5": {
+     "usable": true,
+     "baseline": 2473.0,
+     "days": 91,
+     "disrupted_days": 13,
+     "share": 0.14285714285714285,
+     "mean_depth": 0.13859129144207996,
+     "threshold": 0.5,
+     "first_disrupted": "2023-04-01",
+     "last_disrupted": "2023-05-08"
+    },
+    "0.75": {
+     "usable": true,
+     "baseline": 2473.0,
+     "days": 91,
+     "disrupted_days": 22,
+     "share": 0.24175824175824176,
+     "mean_depth": 0.13859129144207996,
+     "threshold": 0.75,
+     "first_disrupted": "2023-04-01",
+     "last_disrupted": "2023-06-21"
+    }
+   },
+   "wikimedia": {
+    "usable": false,
+    "reason": "outside data coverage"
+   },
+   "ooni_runs": [
+    [
+     "2023-04-01",
+     "2023-04-02",
+     2
+    ],
+    [
+     "2023-04-05",
+     "2023-04-07",
+     3
+    ],
+    [
+     "2023-04-13",
+     "2023-04-18",
+     6
+    ]
+   ],
+   "timing": {
+    "window": [
+     "2023-05-09",
+     "2023-05-12"
+    ],
+    "ooni_run_in_window": false,
+    "chance_rate": 0.12872727272727272,
+    "n_quiet": 1375,
+    "window_disrupted_days": 2,
+    "window_share": 0.02197802197802198
+   },
+   "sdid": {
+    "log": 0.033379028103771136,
+    "se": 0.11409424214750921,
+    "pct": 0.03394235819285205
+   }
+  }
+ ],
+ "noise_floor": {
+  "baseline_100_1000": {
+   "n": 379,
+   "mean": 0.27968742536827884,
+   "p50": 0.22826086956521738,
+   "p95": 0.7941304347826085,
+   "p99": 0.9230769230769231
+  },
+  "baseline_1000_5000": {
+   "n": 663,
+   "mean": 0.21082934560211758,
+   "p50": 0.13043478260869565,
+   "p95": 0.7139682539682539,
+   "p99": 0.9421449275362318
+  },
+  "baseline_5000_up": {
+   "n": 712,
+   "mean": 0.09157669835185712,
+   "p50": 0.01098901098901099,
+   "p95": 0.4669927536231884,
+   "p99": 0.8444444444444444
+  },
+  "all": {
+   "n": 1754,
+   "mean": 0.17729988573278446,
+   "p50": 0.07608695652173914,
+   "p95": 0.6847826086956522,
+   "p99": 0.917759197324415
+  }
+ },
+ "wikimedia_noise_floor": {
+  "quarter": "2024Q3",
+  "n": 94,
+  "p50": 0.0,
+  "p95": 0.39945652173913015,
+  "max": 1.0
+ },
+ "C3": {
+  "events": [
+   "KZ-2022",
+   "BD-2024",
+   "TZ-2025",
+   "IR-2025",
+   "IR-2026",
+   "IR-2022",
+   "PK-2023"
+  ],
+  "beta": 1.3853676286186973,
+  "se": 0.14643763947336727,
+  "lo": 1.0983498552508975,
+  "hi": 1.6723854019864972,
+  "p_one_sided": 0.0,
+  "interval_width": 0.5740355467355996,
+  "slope_one_question_allowed": false,
+  "depth_version": {
+   "beta": 1.2504026419917036,
+   "se": 0.13869040764666804
+  },
+  "full_only": {
+   "events": [
+    "KZ-2022",
+    "BD-2024",
+    "TZ-2025",
+    "IR-2025",
+    "IR-2026"
+   ],
+   "beta": 1.4465197465344086,
+   "se": 0.14942180531327415,
+   "lo": 1.1536530081203913,
+   "hi": 1.739386484948426
+  },
+  "without_IR-2026": {
+   "beta": 0.5329395080907472,
+   "se": 0.44509482486836655,
+   "lo": -0.33944634865125123,
+   "hi": 1.4053253648327457
+  },
+  "event_window_version": {
+   "events": [
+    "KZ-2022",
+    "BD-2024",
+    "TZ-2025",
+    "IR-2025",
+    "IR-2026",
+    "IR-2022",
+    "PK-2023"
+   ],
+   "dropped_no_exposure": [],
+   "beta": 1.4771186241173984,
+   "se": 0.1517162368894614,
+   "lo": 1.179754799814054,
+   "hi": 1.7744824484207427
+  },
+  "exposure_used": {
+   "KZ-2022": 0.1111111111111111,
+   "BD-2024": 0.05434782608695652,
+   "TZ-2025": 0.07608695652173914,
+   "IR-2025": 0.16483516483516483,
+   "IR-2026": 0.5444444444444444,
+   "IR-2022": 0.021739130434782608,
+   "PK-2023": 0.14285714285714285
+  }
+ },
+ "timing": {
+  "full_events_checked": 5,
+  "hits": 5,
+  "joint_chance": 0.0002463710553184728
+ },
+ "sources": {
+  "ooni": "https://api.ooni.io (aggregation endpoint, measurement_start_day)",
+  "wikimedia": "https://analytics.wikimedia.org/published/datasets/country_project_page/"
+ }
+}
