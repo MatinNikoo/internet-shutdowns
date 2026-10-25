@@ -1,0 +1,31 @@
+classified_iso2_code,economy_name,icann_region_name,pushes,rank_pushes
+US,United States,North America,195067739,1
+IN,India,Asia/Australia/Pacific,158142115,2
+CN,China,Asia/Australia/Pacific,56405232,3
+BR,Brazil,Latin America/Caribbean,54545337,4
+DE,Germany,Europe,42360688,5
+GB,United Kingdom,Europe,39468380,6
+KR,Korea,Asia/Australia/Pacific,35603055,7
+FR,France,Europe,33931569,8
+CA,Canada,North America,30102416,9
+JP,Japan,Asia/Australia/Pacific,29828059,10
+ID,Indonesia,Asia/Australia/Pacific,27404676,11
+RU,Russia,Europe,22040236,12
+ES,Spain,Europe,21693399,13
+VN,Vietnam,Asia/Australia/Pacific,20901844,14
+PL,Poland,Europe,16465137,15
+NL,Netherlands,Europe,15465159,16
+AU,Australia,Asia/Australia/Pacific,14911379,17
+IT,Italy,Europe,13691258,18
+PK,Pakistan,Asia/Australia/Pacific,13376252,19
+PH,Philippines,Asia/Australia/Pacific,13153520,20
+AR,Argentina,Latin America/Caribbean,12470491,21
+BD,Bangladesh,Asia/Australia/Pacific,11783986,22
+TR,Türkiye,Asia/Australia/Pacific,11661372,23
+MX,Mexico,Latin America/Caribbean,11511485,24
+NG,Nigeria,Africa,11236746,25
+CO,Colombia,Latin America/Caribbean,11128431,26
+TW,Taiwan,Asia/Australia/Pacific,10042925,27
+EG,Egypt,Africa,10040445,28
+CH,Switzerland,Europe,9615935,29
+UA,Ukraine,Europe,9404094,30

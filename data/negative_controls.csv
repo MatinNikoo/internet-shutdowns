@@ -1,0 +1,11 @@
+control,iso2,country,quarter,kind,what_happened,source
+RU-2022,RU,Russia,2022Q1,war and sanctions,"Full scale invasion of Ukraine from 24 Feb 2022, followed by broad Western sanctions. Access Now records platform blocks but no full network shutdown this quarter",https://en.wikipedia.org/wiki/International_sanctions_during_the_Russian_invasion_of_Ukraine
+LK-2022,LK,Sri Lanka,2022Q2,economic crisis and protests,"Mass protests from March 2022 over an economic crisis with severe inflation, daily power cuts and fuel shortages. Access Now records a social media block on 2 to 3 Apr, not a full network shutdown",https://en.wikipedia.org/wiki/Aragalaya
+PE-2022,PE,Peru,2022Q4,political crisis and protests,"President Castillo removed on 7 Dec 2022, followed by nationwide protests",https://en.wikipedia.org/wiki/Timeline_of_the_2022%E2%80%932023_Peruvian_protests
+TR-2023,TR,Türkiye,2023Q1,natural disaster,"Earthquakes in southern Türkiye on 6 Feb 2023. Access Now records a Twitter block on 8 Feb, not a full network shutdown",https://earthsky.org/human-world/turkey-syria-earthquake-february-6-2023/
+IL-2023,IL,Israel,2023Q4,war,"Attacks of 7 Oct 2023 and the war that followed",https://en.wikipedia.org/wiki/October_7_attacks
+EC-2024,EC,Ecuador,2024Q1,security crisis,"Government declared an internal armed conflict in January 2024 after gang attacks, including gunmen taking over a live TV broadcast",https://www.krgv.com/news/ecuador-declares-internal-armed-conflict-as-gunmen-take-over-live-tv-broadcast
+LB-2024,LB,Lebanon,2024Q4,war,"Israeli ground invasion of southern Lebanon from 1 Oct 2024",https://en.wikipedia.org/wiki/2024_Israeli_invasion_of_Lebanon
+GE-2024,GE,Georgia,2024Q4,protests,"Protests after the government suspended EU accession talks on 28 Nov 2024",https://www.aljazeera.com/news/2024/11/29/georgia-protesters-clash-with-police-after-pm-suspends-eu-membership-talks
+RS-2024,RS,Serbia,2024Q4,protests,"Novi Sad railway station canopy collapse on 1 Nov 2024, followed by mass anti corruption protests",https://en.wikipedia.org/wiki/Novi_Sad_railway_station_canopy_collapse
+NP-2025,NP,Nepal,2025Q3,protests,"Protests in September 2025 sparked by a social media ban, the prime minister resigned. Access Now records the platform ban, not a full network shutdown",https://english.ahram.org.eg/News/552695.aspx

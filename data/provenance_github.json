@@ -1,0 +1,35 @@
+{
+ "repo": "https://github.com/github/innovationgraph",
+ "pinned_commit": "078fb62ee4395d321bec9f4f06694cca68f6b6cb",
+ "upstream_head": "078fb62ee4395d321bec9f4f06694cca68f6b6cb",
+ "checked_out": "078fb62ee4395d321bec9f4f06694cca68f6b6cb",
+ "checked_on": "2026-10-20",
+ "files": {
+  "git_pushes": {
+   "sha256_upstream": "8d8525632080b21e1b39cfd2fbd0abdb898461ec9ee7e59da61977749a296d3a",
+   "sha256_repo": "8d8525632080b21e1b39cfd2fbd0abdb898461ec9ee7e59da61977749a296d3a",
+   "same_as_repo": true,
+   "last_quarter": "2026Q1"
+  },
+  "developers": {
+   "sha256_upstream": "4d66d50024066cbb85fec990f75bdb9a736e89dc998af8fbca6e946c14e56fd1",
+   "sha256_repo": "4d66d50024066cbb85fec990f75bdb9a736e89dc998af8fbca6e946c14e56fd1",
+   "same_as_repo": true,
+   "last_quarter": "2026Q1"
+  },
+  "repositories": {
+   "sha256_upstream": "ccff96ee8774b9a3369ab552cb2b568b135b8bd5b818e2678071731ec34b8613",
+   "sha256_repo": "ccff96ee8774b9a3369ab552cb2b568b135b8bd5b818e2678071731ec34b8613",
+   "same_as_repo": true,
+   "last_quarter": "2026Q1"
+  },
+  "organizations": {
+   "sha256_upstream": "756ca03e5b6edcc81eafffa66f6d3a95f95d80e1fdad89f2f3ae8e7e5e8a88d6",
+   "sha256_repo": "756ca03e5b6edcc81eafffa66f6d3a95f95d80e1fdad89f2f3ae8e7e5e8a88d6",
+   "same_as_repo": true,
+   "last_quarter": "2026Q1"
+  }
+ },
+ "datasheet_version": "1.0.10",
+ "datasheet_updated": "2026-05-08"
+}
