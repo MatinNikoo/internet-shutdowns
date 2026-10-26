@@ -1,7 +1,7 @@
 numpy==2.5.3
 pandas==3.0.5
 scipy==1.18.1
-duckdb==1.5.6
+duckdb==2.0.0
 matplotlib==3.11.2
 pycountry==26.2.16
 pytest==9.1.1
